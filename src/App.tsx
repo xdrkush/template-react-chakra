@@ -13,6 +13,7 @@ import { ProfilePage } from "./pages/Profile";
 import { VotePage } from "./pages/Vote";
 import { StatPage } from "./pages/Stat";
 import { ServicesPage } from "./pages/Services";
+import { ServicePage } from "./pages/Service";
 import { AboutPage } from "./pages/About";
 import { ContactPage } from "./pages/Contact";
 import { NotFoundPage } from "./pages/NotFound";
@@ -29,7 +30,11 @@ export const App = () => (
         {/* /#/home */}
         <Route path="home" element={<HomePage />} />
         {/* /#/services */}
-        <Route path="services" element={<ServicesPage />} />
+        <Route path="services">
+          <Route index element={<ServicesPage />} />
+          <Route path="myservice" element={<ServicePage />} />
+
+        </Route>
         {/* /#/login */}
         <Route path="apropos" element={<AboutPage />} />
         {/* /#/login */}

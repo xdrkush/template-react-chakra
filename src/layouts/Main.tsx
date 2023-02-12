@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom"
-import { ChakraProvider } from '@chakra-ui/react';
+import { Box, ChakraProvider } from '@chakra-ui/react';
 import { theme } from "../Theme"
 
 // Components
@@ -20,6 +20,7 @@ export const MainLayout = () => {
     return (
         <ChakraProvider theme={theme}>
             <NavbarMain />
+            <Box pt={"10"}/>
 
             <Outlet /> {/* Body  */}
 

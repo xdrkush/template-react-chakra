@@ -26,7 +26,7 @@ export function NavbarMain() {
     const { isOpen, onToggle } = useDisclosure();
 
     return (
-        <Box>
+        <Box position={'fixed'} w={"100%"} zIndex={10}>
             <Flex
                 bg={useColorModeValue('white', 'gray.800')}
                 color={useColorModeValue('gray.600', 'white')}
@@ -78,9 +78,9 @@ export function NavbarMain() {
                         fontSize={'sm'}
                         fontWeight={600}
                         color={'white'}
-                        bg={'primary.500'}
+                        bg={'primary.50'}
                         _hover={{
-                            bg: 'primary.500',
+                            bg: 'primary.50',
                         }}>
                         <Link
                             p={2}
@@ -88,6 +88,7 @@ export function NavbarMain() {
                             fontSize={'md'}
                             fontWeight={500}
                             color={'primary'}
+                            textColor={'gray.800'}
                             _hover={{
                                 textDecoration: 'none',
                                 color: useColorModeValue('gray.800', 'white'),
@@ -118,13 +119,13 @@ export function NavbarMain() {
 }
 
 const DesktopNav = () => {
-    const linkColor = useColorModeValue('gray.600', 'gray.200');
+    const linkColor = useColorModeValue('gray.600', 'white');
     const linkHoverColor = useColorModeValue('gray.800', 'white');
     const popoverContentBgColor = useColorModeValue('white', 'gray.800');
 
     return (
         <Stack direction={'row'} spacing={4}>
-            
+
             {NAV_ITEMS.map((navItem) => (
                 <Box key={navItem.label}>
                     <Popover trigger={'hover'} placement={'bottom-start'}>
@@ -173,16 +174,18 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
             display={'block'}
             p={2}
             rounded={'md'}
-            _hover={{ bg: useColorModeValue('primary.50', 'gray.900') }}>
+            _hover={{ bg: useColorModeValue('primary.50', 'primary.50') }}>
             <Stack direction={'row'} align={'center'}>
                 <Box>
                     <Text
                         transition={'all .3s ease'}
-                        _groupHover={{ color: 'primary.500' }}
+                        _groupHover={{ color: 'gray.800' }}
                         fontWeight={500}>
                         {label}
                     </Text>
-                    <Text fontSize={'sm'}>{subLabel}</Text>
+                    <Text fontSize={'sm'} _groupHover={{ color: 'gray.800' }}>
+                        {subLabel}
+                    </Text>
                 </Box>
                 <Flex
                     transition={'all .3s ease'}
@@ -192,7 +195,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
                     justify={'flex-end'}
                     align={'center'}
                     flex={1}>
-                    <Icon color={'primary.500'} w={5} h={5} as={ChevronRightIcon} />
+                    <Icon color={'gray.800'} w={5} h={5} as={ChevronRightIcon} />
                 </Flex>
             </Stack>
         </Link>
@@ -202,7 +205,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
 const MobileNav = () => {
     return (
         <Stack
-            bg={useColorModeValue('white', 'gray.800')}
+            bg={useColorModeValue('gray.800', 'gray.800')}
             p={4}
             display={{ md: 'none' }}>
             {NAV_ITEMS.map((navItem) => (
@@ -228,7 +231,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
                 }}>
                 <Text
                     fontWeight={600}
-                    color={useColorModeValue('gray.600', 'gray.200')}>
+                    color={useColorModeValue('gray.800', 'gray.800')}>
                     {label}
                 </Text>
                 {children && (

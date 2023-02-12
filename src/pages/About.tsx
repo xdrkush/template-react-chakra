@@ -5,13 +5,13 @@ import {
 import { ScrollToId } from "../utils/ScrollToId"
 
 // Components
-import { HeroAbout } from "../components/HeroAbout"
-import { RoadMapProject } from "../components/RoadMapProject"
-import { ListCardProject } from "../components/ListCardProject"
+import { HeroAbout } from "../components/about/HeroAbout"
+import { RoadMapProject } from "../components/about/RoadMapProject"
+import { ListCardProject } from "../components/about/ListCardProject"
 
 export const AboutPage = () => (
   <Box textAlign="center" fontSize="xl">
-    <Grid minH="90vh">
+    <Grid minH="80vh">
       <HeroAbout />
     </Grid>
     <Grid minH="50vh">

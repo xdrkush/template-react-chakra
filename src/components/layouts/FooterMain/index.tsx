@@ -84,7 +84,7 @@ export function FooterMain() {
                     spacing={8}>
                     <Stack spacing={6}>
                         <Box>
-                            <Logo color={useColorModeValue('primary.500', 'primary.500')} />
+                            <Logo color={useColorModeValue('primary.50', 'primary.50')} />
                         </Box>
                         <Text fontSize={'sm'}>
                             © 2022 Chakra Templates. All rights reserved
@@ -129,7 +129,7 @@ export function FooterMain() {
                                 }}
                             />
                             <IconButton
-                                bg={useColorModeValue('primary.500', 'primary.500')}
+                                bg={useColorModeValue('primary.50', 'primary.50')}
                                 color={useColorModeValue('white', 'gray.800')}
                                 _hover={{
                                     bg: 'green.600',

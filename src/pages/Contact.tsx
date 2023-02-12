@@ -3,7 +3,7 @@ import {
   Grid,
 } from "@chakra-ui/react"
 
-import { FormContact } from "../components/FormContact"
+import { FormContact } from "../components/contact/FormContact"
 
 export const ContactPage = () => (
   <Box textAlign="center" fontSize="xl">

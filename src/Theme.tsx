@@ -1,7 +1,4 @@
 import { extendTheme } from '@chakra-ui/react'
-import {
-    useColorModeValue,
-} from '@chakra-ui/react';
 export const theme = extendTheme({
 
     initialColorMode: 'system',
@@ -16,9 +13,11 @@ export const theme = extendTheme({
     },
     colors: {
         primary: {
-            50: '#f7fafc',
-            500: '#718096',
-            900: '#171923',
+            50: '#FFF429',
+            100: "#EDE326",
+            500: '#DED523',
+            800: '#8C8616',
+            900: '#C2BA1F ',
         },
         secondary: {
             50: '#f7fafc',

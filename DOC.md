@@ -23,6 +23,9 @@ yarn start
 yarn build
 ```
 
+# Thmes:
+  - go to ./src/Theme.tsx changing primary, ...
+
 # Ressources:
 
 # Template Chakra:
