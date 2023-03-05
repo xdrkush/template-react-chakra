@@ -6,8 +6,8 @@ import {
 import { FormContact } from "../components/contact/FormContact"
 
 export const ContactPage = () => (
-  <Box textAlign="center" fontSize="xl">
-    <Grid minH="80vh">
+  <Box fontSize="xl">
+    <Grid minH="90vh">
       <FormContact />
     </Grid>
   </Box>

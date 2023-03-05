@@ -6,6 +6,7 @@ import {
     Stack,
     Text,
     Link,
+    Highlight,
     useBreakpointValue,
 } from '@chakra-ui/react';
 
@@ -15,6 +16,7 @@ export const HeroAbout = () => {
             <Flex p={8} flex={1} align={'center'} justify={'center'}>
                 <Stack spacing={6} w={'full'} maxW={'lg'}>
                     <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
+
                         <Text
                             as={'span'}
                             position={'relative'}
@@ -28,52 +30,58 @@ export const HeroAbout = () => {
                                 bg: 'primary.50',
                                 zIndex: -1,
                             }}>
+                            <Highlight
+                                query='Freelance'
+                                styles={{ px: '2', py: '1', rounded: 'md', color: "gray.900", bg: 'primary.50' }}
+                            >
                             Freelance
-                        </Text>
-                        <br />{' '}
-                        <Text color={'primary.50'} as={'span'}>
-                            Design Projects
-                        </Text>{' '}
-                    </Heading>
-                    <Text fontSize={{ base: 'md', lg: 'lg' }} >
-                        The project board is an exclusive resource for contract work. It's
-                        perfect for freelancers, agencies, and moonlighters.
+                        </Highlight>
                     </Text>
-                    <Stack direction={{ base: 'column', md: 'row' }} justify='center' spacing={4}>
-                        <Button
-                            rounded={'md'}
-                            bg={'primary.50'}
-                            color={'gray.800'}
-                            _hover={{
-                                bg: 'primary.900',
-                            }}>
-                            <Link
-                                href={'#/services'}
-                                fontSize={'lg'}
-                            >
-                                Services
-                            </Link>
-                        </Button>
-                        <Button rounded={'md'}>
-                            <Link
-                                href={'#/contact'}
-                                fontSize={'lg'}
-                            >
-                                Contact
-                            </Link>
-                        </Button>
-                    </Stack>
+
+                    <br />{' '}
+                    <Text color={'grey.900'} as={'span'}>
+                        Design Projects
+                    </Text>{' '}
+                </Heading>
+                <Text fontSize={{ base: 'md', lg: 'lg' }} >
+                    The project board is an exclusive resource for contract work. It's
+                    perfect for freelancers, agencies, and moonlighters.
+                </Text>
+                <Stack direction={{ base: 'column', md: 'row' }} justify='center' spacing={4}>
+                    <Button
+                        rounded={'md'}
+                        bg={'primary.50'}
+                        color={'gray.800'}
+                        _hover={{
+                            bg: 'primary.900',
+                        }}>
+                        <Link
+                            href={'#/services'}
+                            fontSize={'lg'}
+                        >
+                            Services
+                        </Link>
+                    </Button>
+                    <Button rounded={'md'}>
+                        <Link
+                            href={'#/contact'}
+                            fontSize={'lg'}
+                        >
+                            Contact
+                        </Link>
+                    </Button>
                 </Stack>
-            </Flex>
-            <Flex flex={1}>
-                <Image
-                    alt={'Login Image'}
-                    objectFit={'cover'}
-                    src={
-                        'https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
-                    }
-                />
-            </Flex>
         </Stack>
+            </Flex >
+    <Flex flex={1}>
+        <Image
+            alt={'Login Image'}
+            objectFit={'cover'}
+            src={
+                'https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+            }
+        />
+    </Flex>
+        </Stack >
     );
 }

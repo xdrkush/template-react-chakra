@@ -27,7 +27,7 @@ import { BsPerson } from 'react-icons/bs';
 
 export const FormContact = () => {
     return (
-        <Container maxW="full" mt={0} centerContent overflow="hidden">
+        <Container maxW="full" mt={10} centerContent overflow="hidden">
             <Flex>
                 <Box p={8}>
                     <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }} justify="center">

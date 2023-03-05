@@ -12,7 +12,7 @@ export const InformationService = () => {
                 <Heading>
                     <Highlight
                         query='Lorem Ipsum,'
-                        styles={{ px: '2', py: '1', rounded: 'md', color: "white", bg: 'primary.900' }}
+                        styles={{ px: '2', py: '1', rounded: 'md', color: "gray.900", bg: 'primary.50' }}
                     >
                         Lorem Ipsum, A digital Product design agency
                     </Highlight>
@@ -28,21 +28,21 @@ export const InformationService = () => {
                 <Button
                     bg={'primary.50'}
                     rounded={'full'}
-                    color={'white'}
+                    color={'gray.900'}
                 >
                     #xdrkush
                 </Button>
                 <Button
                     bg={'primary.50'}
                     rounded={'full'}
-                    color={'white'}
+                    color={'gray.900'}
                 >
                     #react
                 </Button>
                 <Button
                     bg={'primary.50'}
                     rounded={'full'}
-                    color={'white'}
+                    color={'gray.900'}
                 >
                     #typescript
                 </Button>

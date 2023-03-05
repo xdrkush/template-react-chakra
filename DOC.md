@@ -40,5 +40,5 @@ si vous avez l'erreur:
 C'est une erreur de config de votre VSC
 
 pour corriger:
-https://github.com/chakra-ui/chakra-ui/issues/3714#issuecomment-1375095682
+  - https://github.com/chakra-ui/chakra-ui/issues/3714#issuecomment-1375095682
 
