@@ -1,0 +1,13 @@
+DEV=true
+PORT=3030
+
+DOMAIN=https://domain.com
+DOMAIN_DEV=http://localhost:3000
+
+MAIL_SERVICE='gmail'
+MAIL_HOST='smtp.gmail.com'
+MAIL_PORT='587'
+MAIL_CLIENT='yourmail@gmail.com'
+MAIL_TO='yourmail@gmail.com'
+MAIL_PASSWORD='password'
+MAIL_TLS='tls'
